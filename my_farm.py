@@ -98,7 +98,7 @@ class Chicken(Birds):
 
 class Geese(Birds):
     """Класс гусь"""
-    name = 'Гусa'
+    name = 'Гусыня'
     def __init__(self):
         super().__init__()
     def say(self):

@@ -9,10 +9,6 @@ class Animal:
     def __init__(self):
         Animal.count += 1
 
-    # def sey(self):
-    #     raise NotImplementedError
-    #
-
 
 class Mammals(Animal):
     """Класс млекопитающие"""

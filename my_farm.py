@@ -118,7 +118,7 @@ class Farm:
         self.n_geese = n_geese
 
     def create_farm(self):
-        our_farm = {'cows': [], 'goats': [], 'sheeps': [], 'pigs': [], 'ducks': [], 'chicken': [], 'geese': [] }
+        our_farm = {'cows': [], 'goats': [], 'sheeps': [], 'pigs': [], 'ducks': [], 'chicken': [], 'geese': []}
         for item in self.l_cows:
             our_farm['cows'].append(Cow(item))
 
@@ -142,12 +142,12 @@ class Farm:
         return our_farm
 
 
-list_cows_name = ['Дуся', 'Зорька', 'Бася', 'Машка', 'Астра' ]
+list_cows_name = ['Дуся', 'Зорька', 'Бася', 'Машка', 'Астра']
 list_goats_name = ['Белка', 'Снежка', 'Шустрая', 'Чернушка']
 list_sheeps_name = ['Шон', 'Тимми', 'мать Тимми', 'Лола', 'перая овца', 'вторая овца', 'третья овца']
 list_pigs_name = ['Ганс', 'Брунс', 'Астор']
 
-my_farm = Farm(list_cows_name, list_goats_name, list_sheeps_name,  list_pigs_name, 10, 12, 4 )
+my_farm = Farm(list_cows_name, list_goats_name, list_sheeps_name,  list_pigs_name, 10, 12, 4)
 our_farm = my_farm.create_farm()
 for item in our_farm['cows']:
     item.say()
@@ -163,4 +163,3 @@ print("У меня на ферме {} животных".format(Animal.count))
 duck = Ducks()
 egg = duck.get_egg()
 print("{} снесла яйцо, весом {:0.1f} грамм".format(egg.whose_egg, egg.weight))
-
